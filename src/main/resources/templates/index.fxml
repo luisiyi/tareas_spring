@@ -2,10 +2,21 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gm.tareas.controlador.IndexControlador">
    <children>
-      <Label layoutX="252.0" layoutY="49.0" text="Sistema de Tareas" />
+      <Label layoutX="252.0" layoutY="49.0" text="Sistema de Tareas" textFill="#e63946">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <TableView fx:id="tareaTabla" layoutX="41.0" layoutY="83.0" prefHeight="205.0" prefWidth="516.0">
+        <columns>
+          <TableColumn fx:id="idTareaColumna" prefWidth="74.0" text="ID" />
+          <TableColumn fx:id="nombreTareaColumna" prefWidth="99.0" text="Tarea" />
+            <TableColumn fx:id="responsableColumna" prefWidth="139.0" text="Responsable" />
+            <TableColumn fx:id="estatusColumna" prefWidth="112.0" text="Estatus" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
