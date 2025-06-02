@@ -41,8 +41,8 @@
          <children>
             <Button fx:id="agregarBoton" layoutX="24.0" layoutY="34.0" mnemonicParsing="false" onAction="#agregarTarea" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #1d3557;" text="Agregar" textFill="#f1faee" />
             <Button fx:id="modificarBoton" layoutX="173.0" layoutY="34.0" mnemonicParsing="false" onAction="#modificarTarea" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #1d3557;" text="Modificar" textFill="#f1faee" />
-            <Button fx:id="eliminarBoton" layoutX="312.0" layoutY="34.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="67.0" style="-fx-background-color: #e63946;" text="Eliminar" textFill="#f1faee" />
-            <Button fx:id="limpiarBoton" layoutX="450.0" layoutY="34.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: #ffd60a;" text="Limpiar Forma" />
+            <Button fx:id="eliminarBoton" layoutX="312.0" layoutY="34.0" mnemonicParsing="false" onAction="#eliminarTarea" prefHeight="36.0" prefWidth="67.0" style="-fx-background-color: #e63946;" text="Eliminar" textFill="#f1faee" />
+            <Button fx:id="limpiarBoton" layoutX="450.0" layoutY="34.0" mnemonicParsing="false" onAction="#limpiarFormulario" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: #ffd60a;" text="Limpiar Forma" />
          </children>
       </AnchorPane>
    </children>
